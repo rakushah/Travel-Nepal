@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  
+
+<ion-view hide-back-button="true" title="Travel Nepal">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <!-- <ion-list>
+      <ion-item class="item-icon-right" ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.title}}">
+        {{playlist.title}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list> -->
+ <!--    <div class="dashboard_image" >
+      <img image-lazy-src="explore.jpg">
+      </div> -->
+    <!-- <a twitter  data-lang="en" data-count='horizontal' data-url='http://google.com' data-via='notsosleepy' data-size="medium" data-text='Testing Twitter Share' ></a>
+    <div linkedin class="linkedinShare" data-url='http://www.google.com.au' data-title='Linkedin Share' data-summary="testing Linkedin Share" data-shares='linkedinshares'>{{linkedinshares}}</div> -->
+      <!-- <img image-lazy-src="http://hdwallpaperia.com/wp-content/uploads/2013/12/Nature-Image-Wallpapers-HD-1024x576.jpg"> -->
+    
+   <img class="home-heading-img" src="images/home-bg.png" alt="" class="travel-nepal-bg">
+    <div class="col-md-12">
+    <span class="caption">Explore Nepal...</span>     
+    </div>
+    <table class="table table-bordered" ng-controller="LoadPage">
+              <thead>
+                  <tr>
+                      <th class="table-head-content">
+                         <button class="button button-icon " ng-click="LoadSecondPage('to_see','TO SEE',0)">
+                    <i class="icon ion-camera positive"></i><br>TO SEE
+                  </button>
+                      </th>
+            
+                      <th class="table-head-content">
+                        <button class="button button-icon" ng-click="LoadSecondPage('to_do','TO DO',1)">
+                    <i class="icon ion-clipboard positive"></i><br>TO DO
+                  </button>
+                      </th>
+
+                      <th class="table-head-content">
+                         <button class="button button-icon" ng-click="LoadSecondPage('to_stay','TO STAY',2)">
+                    <i class="icon ion-home positive"></i><br>TO STAY
+                  </button>
+                      </th>
+                      
+
+                  </tr>
+                  <tr>
+                      <th class="table-head-content">
+                         <button class="button button-icon" ng-click="LoadSecondPage('shoppings','SHOPPINGS',3)">
+                    <i class="icon ion-home positive"></i><br>SHOPPINGS
+                  </button>
+                         
+                      </th>
+            
+                      <th class="table-head-content">
+                       <button class="button button-icon" ng-click="LoadSecondPage('discounts','DISCOUNTS',4)">
+                    <i class="icon ion-cash positive"></i><br>DISCOUNTS
+                  </button>
+                       
+                      </th>
+
+                      <th class="table-head-content">
+                       <button class="button button-icon" ng-click="LoadSecondPage('restaurants','RESTAURANTS',5)">
+                    <i class="icon ion-pizza positive"></i><br>RESTAURANTS
+                  </button>
+                         
+                      </th>
+
+                  </tr>
+                   <tr>
+                      <th class="table-head-content">
+                       <button class="button button-icon" ng-click="Booking('car')">
+                    <i class="icon ion-model-s positive"></i><br>BOOK A CAR
+                  </button>
+                        
+                      </th>
+            
+                      <th class="table-head-content">
+                      <button class="button button-icon" ng-click="Booking('flight')">
+                    <i class="icon ion-plane positive"></i><br>BOOK A FLIGHT
+                  </button>
+                       
+                      </th>
+
+                      <th class="table-head-content">
+                      <button class="button button-icon" ng-click="Booking('guide')">
+                    <i class="icon ion-person positive"></i><br>BOOK A GUIDE
+                  </button>
+                          
+                      </th>
+
+                  </tr>
+              </thead>
+     </table>
+       <!--  <div class="row" ng-controller="LoadPage">
+                <div class="col" >
+                  <a class="button button-icon icon ion-camera" ng-click="LoadSecondPage('to_see','TO SEE',0)"> <br>TO SEE</a>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-clipboard" ng-click="LoadSecondPage('to_do','TO DO',1)"><br>TO DO</a>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-home" ng-click="LoadSecondPage('to_stay','TO STAY',2)"><br>TO STAY</a>
+                </div>
+         </div> -->
+            <!--   <div class="row" ng-controller="LoadPage">
+                <div class="col">
+               
+                  <button class="button button-icon" ng-click="LoadSecondPage('shoppings','SHOPPINGS',3)">
+                    <i class="icon ion-home"></i><br>SHOPPINGS
+                  </button>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-cash" ng-click="LoadSecondPage('discounts','DISCOUNTS',4)"><br>DISCOUNTS</a>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-pizza" ng-click="LoadSecondPage('restaurants','RESTAURANTS',5)"><br>RESTAURANTS</a>
+                </div>
+              </div> -->
+             <!--  <div class="row" ng-controller="LoadPage">
+                <div class="col">
+                  <a class="button button-icon icon ion-model-s" ng-click="Booking('car')"><br>BOOK A CAR</a>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-plane" ng-click="Booking('flight')"><br>BOOK A FLIGHT</a>
+                </div>
+                <div class="col">
+                <a class="button button-icon icon ion-person" ng-click="Booking('guide')"><br>BOOK A GUIDE</a>
+                </div>
+              </div>
+    -->
+
+
+  </ion-content>
+</ion-view>

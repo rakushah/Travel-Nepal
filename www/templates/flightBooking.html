@@ -1,0 +1,18 @@
+<ion-view title="Book A Flight">
+  <ion-content  class="has-header" >
+    <div class="button-bar" >
+       <label class="button" ng-model="selectedFlight" btn-radio="'domestic'" ng-click="getList('domestic')">Domestic</label>
+       <label class="button" ng-model="selectedFlight" btn-radio="'international'" ng-click="getList('international')">International</label>
+    
+     </div>
+     <ion-list >
+      <ion-item  ng-repeat="item in flightLists" >
+        <a class="item item-icon-right" href="#/app/homePage/{{item.id}}">
+        <h2>{{item.flight_name}}</h2>
+        <i class="icon ion-chevron-right"></i>
+        </a>
+     </ion-item>
+   </ion-list>
+  </ion-content>
+
+</ion-view>

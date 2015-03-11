@@ -1,0 +1,35 @@
+<ion-view title={{detailsData.name}}>
+ 
+  <ion-content class="has-header" >
+	<div class="img-responsive"  >
+		<img class="lazy" image-lazy-src="{{detailsData.image}}"   height="100">
+	</div>
+  <h2>{{detailsData.name}}</h2>
+  <div > 
+  <span ng-repeat="rating in ratings">
+        <div star-rating rating-value="rating.current" max="rating.max" on-rating-selected="getSelectedRating(rating)"></div>
+        </span>
+    </div>
+   <div class="item_info">
+   		<h2>Infromation</h2>
+    <div class="item_info_details"></div>
+   </div>
+   <div class="trek_facility">
+     <p>Opening Hour : {{detailsData.opening_hour}}</p>
+     <p>Pricing Range:${{detailsData.price_range}}</p>
+     <p>Parking: {{detailsData.parking}}</p>
+   </div>
+   <div class="contact_details">
+   	<h2>Contact</h2>
+   		<p>{{detailsData.location}}</p>
+      <p>Email: {{detailsData.email}}</p>
+      <p>Website: {{detailsData.website}}</p>
+      <p>Tel: {{detailsData.contact}}</p>
+      <a href="#/app/googleMap/{{detailsData.location}}">View on Google Map</a>
+   </div>
+ 	
+   			
+    
+   
+  </ion-content>
+</ion-view>

@@ -1,0 +1,84 @@
+<ion-view title={{resrvationDetails.car_model}} >
+
+  <ion-content >
+       <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+        <!-- NAME -->
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Name" class="form-control" ng-model="resrvationDetails.name"  required>
+             <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">First name is required.</p>
+        </div>
+
+        
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="resrvationDetails.email">
+            <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+            
+        </div>
+         <!-- Contact -->
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="text" name="contact" class="form-control" ng-model="resrvationDetails.contact" required>
+            <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Contact is required.</p>
+        </div>
+         <!-- Arrical Date -->
+        <div class="form-group">
+            <label>Arrival Date</label>
+            <input type="text" name="arrival_date" class="form-control" ng-model="resrvationDetails.arrival_date" required>
+            <p ng-show="userForm.arrival_date.$invalid && !userForm.arrival_date.$pristine" class="help-block">Arrival Date is required.</p>
+        </div>
+        <!-- Departure Date -->
+        <div class="form-group">
+            <label>Departure Date</label>
+            <input type="text" name="depart_date" class="form-control" ng-model="resrvationDetails.depart_date" required>
+            <p ng-show="userForm.depart_date.$invalid && !userForm.depart_date.$pristine" class="help-block">Depart Date is required.</p>
+        </div>
+        <!-- Number Od car -->
+        <div class="form-group">
+            <label>Number Of Car</label>
+            <input type="number" name="number_car" class="form-control" ng-model="resrvationDetails.number_car" required>
+             <p ng-show="userForm.number_car.$invalid && !userForm.number_car.$pristine" class="help-block">Number of car is required.</p>
+        </div>
+         <!-- From -->
+        <div class="form-group">
+            <label>From</label>
+            <input type="text" name="from" class="form-control" ng-model="resrvationDetails.from" required>
+             <p ng-show="userForm.from.$invalid && !userForm.from.$pristine" class="help-block">From is required.</p>
+        </div>
+         <!-- To -->
+        <div class="form-group">
+            <label>To</label>
+            <input type="text" name="to" class="form-control" ng-model="resrvationDetails.to" required>
+             <p ng-show="userForm.to.$invalid && !userForm.to.$pristine" class="help-block">To is required.</p>
+        </div>
+          <!-- Departure Time -->
+        <div class="form-group">
+            <label>Departure TIme</label>
+            <input type="text" name="travel_time" class="form-control" ng-model="resrvationDetails.travel_time" required>
+             <p ng-show="userForm.travel_time.$invalid && !userForm.travel_time.$pristine" class="help-block">Departure TIme is required.</p>
+        </div>
+         <!-- Number Of People -->
+        <div class="form-group">
+            <label>Number Of people</label>
+            <input type="number" name="number_people" class="form-control" ng-model="resrvationDetails.number_people" required>
+            <p ng-show="userForm.number_people.$invalid && !userForm.number_people.$pristine" class="help-block">Number People is required.</p>
+        </div>
+         <!-- Message -->
+        <div class="form-group">
+            <label>Message</label>
+            <input type="text" name="message" class="form-control" ng-model="resrvationDetails.message" required>
+            <p ng-show="userForm.message.$invalid && !userForm.message.$pristine" class="help-block">Message is required.</p>
+        </div>
+       
+    </form>
+      
+
+    <button class="button button-assertive" ng-click="reserveCar(userForm.$valid)">
+ Reserve
+</button>
+   
+	
+  </ion-content>
+</ion-view>

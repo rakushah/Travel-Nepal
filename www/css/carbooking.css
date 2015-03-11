@@ -1,0 +1,241 @@
+/*car reserved*/
+.car_image {
+	position: relative;
+}
+
+.selection {
+    position: absolute;
+    z-index: 19;
+    margin-top: -167px;
+    padding-left: 376px;
+}
+
+select.car-from {
+	margin-right: 168px;
+	/* opacity: 0.3; */
+	background: transparent;
+	width: 268px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+	width: 240px;
+	height: 34px;
+	overflow: hidden;
+	background: url('../images/new-arrow.png') no-repeat right;
+	/* border: 1px solid #ccc; */
+	color: #FFFFFF;
+}
+
+.btn-group-way.custom-btn-group {
+	position: absolute;
+	margin-top: -51px;
+	margin-left: 601px;
+}
+
+.btn-primary {
+	color: #AE8585;
+	text-shadow: none;
+	background-color: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-repeat: no-repeat;
+	border-color: none;
+	border-color: none;
+	filter: none;
+	filter: none;
+}
+
+label.btn.btn-primary.custom-btn {
+	background: #B27A11;
+	border-radius: 0px;
+	border: 1px;
+	color: #FFFFFF;
+	margin: -2px;
+	line-height: 2;
+	height: 36px;
+	/* border: 1px solid#B27A11; */
+}
+
+label.btn.btn-primary.custom-btn:hover{
+	background-color: transparent;
+	border: 1px solid #B27A11;
+}
+
+/*.departtime {
+	width: 30%;
+	background-color: #FFF;
+	margin-left: 15px;
+	margin-top: 15px;
+}*/
+
+h4.departtime-heading {
+	padding-top: 7px;
+	padding-left: 15px;
+	font-size: 12px;
+	color: #BEBDBD;
+	font-weight: normal;
+}
+
+.booking-container {
+	width: 100%;
+	background-color: #EDEDEE;
+	margin-top: -73px;
+}
+
+.departure-time {
+	padding: 56px;
+}
+
+.row {
+    margin-left: -1px;
+    margin-top: 21px;
+}
+
+.departtime {
+	background-color: #FFF;
+	width: 619px;
+	border-right: 1px solid #EDEDEE;;
+}
+
+.arrivaltime {
+	background-color: #FFF;
+	width: 619px;
+}
+
+.second-block{
+	background-color: #FFF;
+	width: 619px;
+	margin-top: -10px;
+	border-right: 1px solid #EDEDEE;
+	border-top: 1px solid #EDEDEE;
+}
+.second-block-1{
+	background-color: #FFF;
+	width: 619px;
+	margin-top: -10px;
+	border-top: 1px solid #EDEDEE;
+}
+input[type="text"] {
+	width: 87%;
+	height: 40px;
+	margin-top: -6px;
+	margin-left: 15px;
+	border: 1px solid#FFF;
+	border-radius: 0px;
+	background: #fff;
+	border-top: 0px solid#FFF;
+}
+
+.custom-counter {
+    width: 376px;
+    margin-left: 12px;
+    margin-top: -19px;
+    border-radius: 0px;
+    background-color: #FFF;
+}
+
+.count-plus-minus {
+    width: 78px;
+    height: 41px;
+    margin-top: -19px;
+    border: 1px;
+    margin-left: 3px;
+    background-color: #E1E2E4;
+}
+
+.custom-select {
+    margin-top: -19px;
+    height: 41px;
+    margin-left: 13px;
+    border-radius: 0px;
+    width: 261px;
+}
+
+.calculate-price-container {
+    background-color: #FFFFFF;
+    width: 99%;
+    margin: 0 auto;
+    margin: 0 0 0 3px;
+    padding: 9px;
+}
+
+.custom-calculate-btn {
+    width: 42%;
+    height: 46px;
+    background-color: #696C77;
+    border: 1px !important;
+	margin: 9px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: none;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-color: none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+.send-enquiry-btn {
+    background-color: #9D2428;
+    width: 50%;
+    border-radius: 0px;
+    color: #FFF;
+    line-height: 35px;
+}
+
+.send-enquiry-btn:hover{
+	background-color:#7D1519;
+	color:#FFFFFF;
+}
+
+.cancel-btn {
+    background-color: #9D2428;
+    width: 50%;
+    border-radius: 0px;
+    color: #FFF;
+    line-height: 35px;
+    margin-left: -4px;
+}
+
+.cancel-btn:hover {
+	background-color:#7D1519;
+	color:#FFFFFF;
+}
+
+.header-caption {
+    margin: 9px;
+    color: #ADADAD;
+    font-size: 16px;
+}
+
+.footer-caption {
+    margin: 9px;
+    color: #ADADAD;
+    font-size: 16px;
+    padding-top: 8px;
+}

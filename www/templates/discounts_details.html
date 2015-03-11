@@ -1,0 +1,24 @@
+<ion-view title={{detailsData.name}} ng-controller="getCatagoryDetails">
+ 
+  <ion-content class="has-header" >
+  <div class="img-responsive"  >
+    <img class="lazy" src="{{detailsData.image}}"   height="100">
+  </div>
+   <div class="item_info">
+      <h2>{{detailsData.discount_percentage}} % Discounts </h2>
+      <h2>Infromation</h2>
+      <p>{{detailsData.info}}</p>
+   </div>
+   
+   <div class="contact_details">
+    <h2>Contact</h2>
+           <p>Tel: {{detailsData.contact}}</p>
+           <p>{{detailsData.location}}</p>
+           <a href="#/app/googleMap/{{detailsData.location}}">View on Google Map</a>
+   </div>
+  
+        
+    
+   
+  </ion-content>
+</ion-view>

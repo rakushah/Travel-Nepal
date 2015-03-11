@@ -1,0 +1,11 @@
+<ion-view title="Online Magazine">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content lazy-scroll class="has-header" >
+   <img class="lazy" image-lazy-src="{{magazineDetails.cover_image}}" ng-click="openMagazine()">
+   <p>{{magazineDetails.title}}</p>
+   <p>{{magazineDetails.volume}}</p>
+  </ion-content>
+
+</ion-view>

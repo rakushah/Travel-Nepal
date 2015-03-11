@@ -1,0 +1,185 @@
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+ background: #F1F0EF;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.nav-item a {
+	display: block;
+	padding: 1em;
+	background: #F1F0EF;
+	color: #B5B4B3;
+	font-size: 16px;
+	text-decoration: none;
+	transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  text-decoration: none;
+  
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  height: 761px;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+  background-size: 200%;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+
+/*custom*/
+span.ion-android-menu {
+	font-size: 41px;
+	color: #FFFFFF;
+}
+
+.travel-banner {
+	width: 1367px;
+	height: 129px;
+	background: #991F23;
+	margin-top: -105px;
+	margin-left: -57px;
+}
+
+h3.site-title {
+	padding-top: 79px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+span.ion-ios-partlysunny {
+	float: right;
+	font-size: 39px;
+	margin-top: 62px;
+	color: #FFFFFF;
+}
+
+span.centi-value {
+	font-size: 20px;
+}
+
+img.travel-nepal-bg {
+	width: 100%;
+	padding-top: 0px;
+}
+
+span.caption {
+	float: right;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 34px;
+	margin-top: -88px;
+	margin-right: 49px;
+}
+
+span.ion-android-color-palette {
+	font-size: 77px;
+	color: #258ED0;
+}
+
+.treck-nepal-icon-wrapper {
+	text-align: center;
+}
+
+.icons-table{
+	list-style: none;
+}
+
+/*table section*/
+.table-bordered>thead>tr>th {
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+.table-bordered>thead>tr>th {
+	border-bottom-width: 1px;
+}
+
+.table-bordered {
+	border: none !important;
+}
+/*table section*/

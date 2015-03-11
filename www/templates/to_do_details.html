@@ -1,0 +1,34 @@
+<ion-view title={{detailsData.name}} ng-controller="getCatagoryDetails">
+ 
+  <ion-content class="has-header" >
+	<div class="img-responsive"  >
+		<img class="lazy" src="{{detailsData.image}}">
+	</div>
+  <div class="button-bar">
+      <a class="button custom-button icon-left ion-calendar">{{detailsData.number_days}} Days</a>
+      <a class="button custom-button icon-left ion-location">{{detailsData.location}}</a>
+      <a class="button custom-button ">${{detailsData.price_range}}</a>
+  </div>
+   <div class="item_details">
+   	  <h2 class="details-heading">Details</h2>
+   		<p class="details-paragraph">{{detailsData.details}}</p>
+   </div>
+ 	
+   		<div class="bar bar-fotter" ng-controller="reserveActivity">
+      <div class="button-bar" >
+          <a class="button button-assertive" ng-click="reserve_todo()"><span class="icon-left ion-checkmark"></span> &nbsp;&nbsp;&nbsp;Reserve</a>
+          
+           <a class="button button-assertive" ng-click="downloadFile()"><span class="icon-left ion-archive"></span> &nbsp;&nbsp;&nbsp; Save</a>
+      </div>
+    </div>	
+    
+   
+  </ion-content>
+</ion-view>
+
+
+
+
+
+
+

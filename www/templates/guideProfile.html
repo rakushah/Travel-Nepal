@@ -1,0 +1,19 @@
+<ion-view title='Guide Page'>
+
+  <ion-content class="has-header">
+   
+      <a class="item item-thumbnail-left" >
+      <img src="{{guideDetails.guide_profile_image}}">
+      <h2>{{guideDetails.guide_name}}</h2>
+      
+    </a>
+
+   {{status}}
+    {{clickedStatus}}
+ 	<input type="radio" ng-model="status" value="available">  Available <br/>
+ 	<input type="radio" ng-model="status" value="unavailable"> Unavailable <br/>
+ 	<button class="button button-assertive" ng-click="update(status)">
+ Update
+</button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,12 @@
+<?php
+	$sqlconn=mysqli_connect('localhost,'root','','phonegap_test') or die(mysqli_error());
+
+	$dataquery=mysqli_query($sqlconn,"SELECT * FROM data");
+
+	$arr=array();
+	while($r=mysqli_fetch_object($datraquery)){
+		array_push($arr,array("id"=>$r->id,"FirstName"=>$r->FirstName));
+
+	}
+	print_r(json_encode($arr));
+?>

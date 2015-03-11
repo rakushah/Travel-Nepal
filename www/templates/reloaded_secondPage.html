@@ -1,0 +1,47 @@
+<ion-view title={{page}}>
+<ion-nav-buttons side="right">
+        <button class="button button-clear " ng-click="isCollapsed = !isCollapsed"><i class="icon ion-android-search"></i></button>
+        <hr>
+   </ion-nav-buttons>
+  <ion-content lazy-scroll class="has-header" ng-controller="getReloadedCatagoryList">
+  <div collapse="isCollapsed">
+           <label class="item item-input">
+                  <input type="search" placeholder="Search" ng-model="search">
+          </label>
+   </div>
+   <div set-ng-animate="false">
+    <div class="slider-container">
+    <carousel interval="5000">
+      <slide ng-repeat="slide in banner" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+              <p class="carousel-custom-caption">{{slide.image_text}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div> 
+  </div>
+   <h2 class="details-heading">{{details}}</h2>
+    <div class="location_edit" ng-controller="LoadPage">
+      <button class="button button-clear ">
+      <i class="icon-left ion-location"></i>
+        {{locationTitle}}
+      </button>
+    <button class="button button-clear button-assertive" style="float: right;" ng-click="reloadPageWithLocation()" >
+      Edit
+    </button>
+    </div>
+  <ion-list ng-controller="LoadPage">
+      <ion-item  ng-repeat="item in detailsData| filter:search"  >
+        <!-- <a class="item item-icon-right" href="#/app/homePage/{{item.id}}"> -->
+        <a class="item item-icon-right" ng-click="LoadThirdPage({{item}})">
+       <img class="lazy" image-lazy-src="{{item.image}}" height="200" width="100" >
+       <p class="rudra">{{item.name}}</p>
+        <!-- <p>{{item.discount_percentage}}</p>
+       <p>{{item.contact}}</p> -->
+       <i class="icon ion-chevron-right"></i>
+      </a>
+      </ion-item>
+   </ion-list>
+  </ion-content>
+</ion-view>

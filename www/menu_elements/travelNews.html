@@ -1,0 +1,22 @@
+<ion-view title="Travel News">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content lazy-scroll class="has-header" >
+   <!-- list items -->
+  <div class="dashboard_image" >
+      <img image-lazy-src="explore.jpg">
+  </div>
+   <ion-list >
+   		<ion-item  ng-repeat="item in newsDetails"  class="item-thumbnail-left">
+     
+   			  <img class="lazy" image-lazy-src="{{item.image}}">
+           <h2>{{item.title}}</h2>
+   			    <p>{{item.description}}</p>
+            <a href="#/app/newsDetails/{{item.id}}">{{item.post_date}}</a>
+   		
+   		</ion-item>
+   </ion-list>
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,84 @@
+<ion-view title={{flightDetails.flight_name}} >
+  
+  <ion-content >
+    
+   <div class="car_image">
+        <img class="lazy" src="explore.jpg"   height="100"> 
+    </div>
+    <div class="selection">
+      <select ng-model="selectedPlace.from"
+            ng-options="s.from for s in flightLocation">
+        <option value="">-- From --</option>
+    </select>
+    <select ng-model="selectedPlace.to"
+            ng-options="s.to for s in flightLocation | filter:selectedPlace.from">
+        <option value="">{{selectedPlace.from.to}}</option>
+    </select>
+    <span>{{selectedPlace.from}}</span>
+    </div>
+     
+    <div class="btn-group-way" >
+    <pre>{{selected.type || 'null'}}</pre>
+        <label class="btn btn-primary" ng-model="selected.type" btn-radio="'one_way'">One Way</label>
+        <label class="btn btn-primary" ng-model="selected.type" btn-radio="'two_way'">Two Way</label>
+    </div>
+    <div ng-controller="DatepickerDemoCtrl">
+      
+            <div class="departtime">
+            <h4>Depart On</h4>
+                <p class="input-group">
+                  <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="selected.arrival_date" is-open="closed" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                  <span class="input-group-btn">
+                    <button type="button" class="button button-icon icon ion-calendar" ng-click="open($event)"></button>
+                  </span>
+                </p>
+                <pre>Selected date of Depart On is: <em>{{selected.arrival_date | date:'fullDate'}}</em></pre>
+            </div>
+
+            <div class="arrivaltime">
+             <h4>Arrive On</h4>
+                <p class="input-group">
+                  <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="selected.depart_date" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                  <span class="input-group-btn">
+                    <button type="button" class="button button-icon icon ion-calendar" ng-click="open2($event)"></button>
+                  </span>
+                </p>
+                 <pre>Selected date of Arrive On is: <em>{{selected.depart_date | date:'fullDate' }}</em></pre>
+      
+            
+    </div>
+  </div>
+
+    <!-- <div class="number-of-travellers" mg-model="selected.count">
+      <p>Travellers</p>
+      <span>{{selected.count}}</span>
+            <button ng-click="selected.count = selected.count - 1" ng-init="selected.count=0">-</button>
+            <button ng-click="selected.count = selected.count + 1" ng-init="selected.count=0">+</button>
+    </div> -->
+    <div class="flight_class" > 
+    <p>Class</p>
+      <select ng-model="selected.flight_class">
+      <option selected>Economic</option>
+      <option >Front</option>
+      <option>Special</option>
+    </select>
+    </div>
+    <div class="passanger_details">
+      <form action="demo_form.asp">
+         Name: <input type="text" name="fname" ng-model="selected.name"><br>
+         Number Of People: <input type="text" name="number_people" ng-model="selected.number_people"><br>
+        Email: <input type="text" name="email" ng-model="selected.email"><br>
+        Country: <input type="text" name="country" ng-model="selected.country"><br>
+         Contact: <input type="text" name="contact" ng-model="selected.contact"><br>
+        
+      </form>
+    </div>
+{{isChecked}}
+  <ion-checkbox ng-model="selected.pick_me">Pick Me</ion-checkbox>
+
+     <button class="btn" ng-click="sendenquiry(selected)">Send Enquiry</button>
+     <button>Cancel</button>
+     <ul class="list">
+
+  </ion-content>
+</ion-view>

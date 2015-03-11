@@ -1,0 +1,19 @@
+<ion-view title='Book A Guide'>
+
+  <ion-content class="has-header">
+        <form action="demo_form.asp">
+           Name: <input type="text" name="fname" ng-model="resrvationDetails.name"><br>
+           Email: <input type="text" name="emial" ng-model="resrvationDetails.email"><br>
+           Country: <input type="text" name="country" ng-model="resrvationDetails.country"><br>
+           Contact: <input type="text" name="contact" ng-model="resrvationDetails.contact"><br>
+           Message: <input type="text" name="message" ng-model="resrvationDetails.message"><br>
+      </form>
+      
+<p>form = {{resrvationDetails | json}}</p>
+    <button class="button button-assertive" ng-click="sendenquiry(resrvationDetails)">
+ Reserve
+</button>
+   
+	
+  </ion-content>
+</ion-view>

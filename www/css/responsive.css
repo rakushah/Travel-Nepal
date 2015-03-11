@@ -1,0 +1,296 @@
+@media screen and (min-width: 48em) {
+  header {
+    padding-bottom: 5em;
+  }
+  
+  .logo {
+    float: left;
+    margin: 1.25em 0;
+  }
+	
+  .btn {display: none;}
+	
+  :checked ~ .wrapper .inner {
+    margin-right: 0%;
+    -webkit-transition: 0;
+       -moz-transition: 0;
+        -ms-transition: 0;
+         -o-transition: 0;
+            transition: 0;
+  }
+	
+  nav,
+  :checked ~ nav {
+    float: right;
+    position: static;
+    background: transparent;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    -webkit-transition: 0;
+       -moz-transition: 0;
+        -ms-transition: 0;
+         -o-transition: 0;
+            transition: 0;
+  }
+		
+  nav .close,
+  :checked ~ nav .close {
+    display: none;
+  }
+		
+  #nav {
+    position: absolute;
+    top: 1.5em;
+    right: 2%;
+    border: 0;
+  }
+			
+  #nav li {display: inline; float: left;}
+  #nav li.current a {color: #7b7776;}
+			
+  #nav a {
+    padding: 0 1.5em;
+    display: inline;
+    border: 0;
+    background: transparent;
+  }
+				
+  #nav a:hover {background: transparent;}
+
+  #sidebar {
+    margin-top: 5.5em;
+  }
+}
+
+/*custom responsive*/
+@media only screen and (max-width: 1280px) and (min-width: 800px){
+    span.caption {
+      margin-left: 864px;
+    }
+
+    .table {
+      width: 100%;
+    }
+
+}
+
+@media (max-width: 800px) {
+  span.caption {
+    margin-left: 512px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+  span.caption {
+    margin-left: 732px;
+    font-size: 36px;
+  }
+
+  input[type="search"] {
+    width: 96%;
+  }
+
+  a.button.icon-left.ion-calendar.ng-binding {
+    padding-left: 155px;
+  }
+
+  .button-bar > .button {
+    padding: 0 105px;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 97%;
+  }
+}
+
+@media (max-width: 768px) {
+  span.caption {
+    margin-left: 525px;
+    font-size: 31px;
+  }
+
+  input[type="search"] {
+    width: 95%;
+  }
+
+  .button-bar > .button {
+    padding: 0 77px;
+  }
+
+  a.button.icon-left.ion-calendar.ng-binding {
+    padding-left: 76px;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px){
+  span.caption {
+    margin-left: 590px;
+    font-size: 26px;
+  }
+
+  input[type="search"] {
+    width: 94%;
+  }
+
+  .button-bar > .button {
+    padding: 0 51px;
+  }
+
+  a.button.icon-left.ion-calendar.ng-binding {
+    padding-left: 48px;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 96%;
+  }
+}
+
+
+@media screen and (max-width: 568px) and (min-width: 320px){
+  span.caption {
+    margin-left: 374px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  .button{
+    font-size: 10px;
+  }
+
+  img.home-heading-img {
+      height: 206px;
+  }
+
+  span.caption {
+    margin-left: 210px;
+    font-size: 14px;
+    margin-top: -30px;
+  }
+/*today changes*/
+  h2.details-heading.ng-binding {
+    padding-left: 17px;
+    font-size: 13px;
+    margin-top: -12px;
+  }
+
+  .button-clear.button-clear {
+    padding-left: 14px;
+    margin-top: -24px;
+    font-size: 14px;
+  }
+
+  .carousel-caption {
+    width: 49%;
+  }
+
+  p.carousel-custom-caption.ng-binding {
+    font-size: 12px;
+  }
+
+  p.rudra.ng-binding {
+    width: 46%;
+    font-size: 12px;
+    border-radius: 2px;
+    top: -64px;
+  }
+
+  .bar-assertive .button.button-clear {
+    padding-top: 23px;
+  }
+
+ input[type="search"]{
+    width: 87%;
+  }
+
+  .ion-android-search:before {
+    position: relative;
+    z-index: 9;
+  }
+
+  /*detailspage*/
+  .button-bar > .button {
+    padding: 0 18px;
+    font-weight: bold;
+    font-size: 9px;
+  }
+
+  a.button.icon-left.ion-calendar.ng-binding {
+    padding-left: 18px;
+  }
+
+  span.icon-left.ion-archive {
+    font-size: 20px;
+  }
+
+  span.icon-left.ion-checkmark {
+    font-size: 20px;
+  }
+
+  .bar .button-bar > .button, .bar .buttons > .button {
+    line-height: 2;
+    font-size: 12px;
+    min-height: 34px;
+  }
+
+  h2.details-heading {
+    padding-left: 12px;
+  }
+
+  p.details-paragraph.ng-binding {
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  /*form*/
+  input[type="text"], input[type="email"], input[type="number"] {
+    width: 90%;
+  }
+
+  button.btn.btn-assertive {
+    width: 91%;
+  }
+
+  /*to see*/
+
+  .information-heading {
+    width: 36%;
+    padding: 0px;
+    font-size: 14px;
+  }
+
+/*to stay*/
+  .hotel-caption {
+    width: 48%;
+  }
+
+  .hotel-heading {
+    font-size: 14px;
+  }
+
+  .hotel-inf-heading {
+    width: 30%;
+    font-size: 14px;
+  }
+
+  .contact-heading {
+    width: 23%;
+    font-size: 14px;
+  }
+
+  img {
+  height: 130px;
+  }
+}

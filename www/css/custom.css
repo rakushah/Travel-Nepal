@@ -1,0 +1,518 @@
+.restaurent-body{
+	width:100%;
+	line-height:60px;
+	background-color: #991f23;
+}
+
+.restaurent-body ul{
+	margin-bottom:0px;
+}
+
+.restaurents li{
+	display: inline-block;
+	color:white;
+	font-size: 24px;
+	line-height: 30px;
+}
+.restaurents a{
+	text-decoration: none;
+	color:white;
+}
+
+.carousel-caption {
+	padding-bottom: 0px;
+	font-size: 40px;
+}
+
+.slide-show li{
+	display:inline;
+}
+.slide-show li.edit{
+	font-size: 20px;
+	float:right;
+	color:red;
+}
+i.glyphicon.glyphicon-map-marker {
+	margin-left: -40px;
+}
+span.kathmandu{
+	font-size: 20px;
+}
+.brick-cafe{
+	border-left: 6px solid black;
+}
+.reef-cafe{
+	border-left: 6px solid black;
+}
+.bricks-cafe{
+	border-left: 6px solid black;
+}
+
+.item_details {
+    padding-top: 19px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 29px;
+    background-color: #FFF;
+    margin-top: 13px;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 10px -1px;
+}
+
+li {
+  line-height: 27px;
+}
+
+.button-bar > .button:last-child {
+  border-radius: 0px;
+}
+
+.button-bar > .button:last-child {
+  border-right-width: 1px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.button-bar > .button:first-child {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.bar.bar-fotter {
+  padding: 0px;
+}
+/*custom css*/
+th.table-head-content {
+	text-align: center;
+}
+
+span.caption {
+	position: absolute;
+	margin-top: -57px;
+	margin-left: 995px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 42px;
+}
+
+h1:first-child, .h1:first-child {
+	margin-top: -1px;
+	height: 62px;
+	background-image: url(../images/trekking-nepal.png);
+	background-repeat: no-repeat;
+}
+
+a#home-link {
+	text-decoration: none;
+}
+
+img.home-heading-img {
+	border: 0 none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.item-icon-left {
+	padding-left: 21px;
+}
+
+a.item {
+	font-size: 16px;
+	background: #F1F0EF;
+	color: #888786;
+}
+
+.item {
+	border-color: #FFF;
+	}s
+
+
+.button-icon {
+	font-size: 13px;
+	font-weight: bold;
+	color: #737272;
+}
+
+/*today*/
+.carousel-indicators {
+    list-style: outside none none;
+    position: absolute;
+    right: 633px;
+    top: 486px;
+    z-index: 5;
+}
+
+img {
+    border: 0 none;
+    height: 306px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.carousel-caption {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    height: 54px;
+    margin-top: -55px;
+    opacity: 0.5;
+    padding-bottom: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 35%;
+    z-index: 9;
+}
+
+.carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    display: block;
+    float: left;
+    height: 10px;
+    margin-left: 5px;
+    margin-top: -209px;
+    position: relative;
+    text-indent: -999px;
+    width: 10px;
+    z-index: 9;
+}
+
+p.rudra.ng-binding {
+	background: none repeat scroll 0 0 white;
+	font-weight: bold;
+	height: 41px;
+	margin: -27px 12px 1px;
+	padding-top: 10px;
+	position: relative;
+	border-radius: 2px;
+	text-align: center;
+	top: -140px;
+	width: 14%;
+	z-index: 9;
+}
+
+h2.details-heading.ng-binding {
+	padding-left: 17px;
+}
+
+.button-clear.button-clear {
+	padding-left: 14px;
+}
+
+.location_edit {
+	padding-right: 8px;
+}
+
+p.carousel-custom-caption.ng-binding {
+	color: #FFFFFF;
+	font-size: 19px;
+}
+
+a.item {
+  font-size: 16px;
+  background: none;
+}
+
+.item {
+	border-color: #fff;
+	background-color: #fff;
+	color: #444;
+	z-index: 0;
+	display: block;
+	margin: -1px;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 16px;
+}
+
+.list {
+	padding: 17px;
+}
+
+.item-icon-right .icon {
+	color: #FFF;
+}
+
+.carousel-control {
+	background: none;
+	border: none;
+}
+
+input[type="search"] {
+	width: 97%;
+	height: 25px;
+	margin-left: 14px;
+	margin-top: 8px;
+}
+
+
+/*menu list home page css*/
+a.item.nav-clear.menu-close.item-icon-left.menu-list {
+	font-size: 16px;
+	background: #F1F0EF;
+	color: #888786;
+	padding: 21px;
+	margin-left: -16px;
+	width: 274px;
+	padding-top: -18px;
+}
+
+
+/*end of menu list home page css*/
+
+
+
+/*details page css*/
+a.button.icon-left.ion-calendar.ng-binding {
+	padding-left: 198px;
+}
+
+.button-bar > .button {
+	padding: 0 161px;
+	line-height: 45px;
+}
+
+a.button.custom-button {
+	border: 1px solid #FFF;
+	background-color: #EDEDEE;
+	color: #737373;
+}
+
+.button.button-assertive {
+	border-color: #991F23;
+	background-color: #991F23;
+	color: #fff;
+}
+
+.bar {
+	border-bottom: none;
+}
+
+.bar .button-bar > .button, .bar .buttons > .button {
+	min-height: 44px;
+	white-space: normal;
+	line-height: 2;
+	font-size: 20px;
+}
+
+.ion-checkmark:before {
+	content: "\f120";
+}
+
+.ion-archive:before {
+	content: "\f2c9";
+}
+
+span.icon-left.ion-checkmark {
+	font-size: 24px;
+}
+
+span.icon-left.ion-archive {
+	font-size: 23px;
+}
+
+h2.details-heading {
+    padding-left: 66px;
+  }
+
+  p.details-paragraph.ng-binding {
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+/*reserved form css*/
+
+button.btn.btn-assertive {
+	display: inline-block;
+	margin-left: 14px;
+	width: 11%;
+	line-height: 32px;
+	background: #991F23;
+	text-shadow: none;
+	color: #FFFFFF;
+	border: none;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+	width: 98%;
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+
+/*today car book*/
+ion-item.item-thumbnail-left.item {
+	border-color: #fff;
+	background-color: #EDEDEE;
+	color: #444;
+	z-index: 0;
+	display: block;
+	margin: 0px;
+	padding: 0;
+	border-width: 3px;
+	border-style: solid;
+	font-size: 16px;
+}
+
+.item-thumbnail-left, .item-thumbnail-left .item-content {
+	min-height: 80px;
+}
+
+button.custom-button {
+	width: 92px;
+	min-height: 83px;
+	border-left: 1px solid #C4C4C4;
+	border-bottom: 1px solid#EDEDEE;
+	border-top: 1px solid#EDEDEE;
+	background-color: #EDEDEE;
+	border-right: 1px solid#EDEDEE;
+}
+
+button.custom-button:hover {
+	background-color: #756F7B;
+	color: #FFFFFF;
+}
+
+button.button.custom-button.ion-checkmark-round {
+	white-space: normal;
+	font-size: 23px;
+	line-height: 26px;
+	color: #8B8989;
+}
+
+/*.button {
+	border-left: 1px solid #D1D1D2;
+	border-bottom: 1px solid#EDEDEE;
+	border-top: 1px solid#EDEDEE;
+	background-color: #EDEDEE;
+	border-right: 1px solid#EDEDEE;
+	}*/
+
+p.list-of-cars {
+	margin-left: 21px;
+	margin-top: 9px;
+	font-weight: bold;
+}
+
+h2.car-item-heading {
+	padding-left: 97px;
+}
+
+p.car-item-details.ng-binding {
+	padding-left: 97px;
+}
+
+/*css of to see pages*/
+.info-container {
+    background-color: #EDEDEE;
+}
+
+.info-container-wrapper {
+    padding: 12px;
+}
+
+.information-heading {
+    background-color: #991F23;
+    width: 14%;
+    padding: 5px;
+    color: #FFF;
+    font-size: 27px;
+    text-align: center;
+}
+
+.item_info {
+    background-color: #FFF;
+}
+
+.details-des {
+    text-align: justify;
+    padding: 13px;
+    color: #333333;
+}
+
+.trek_facility {
+    padding: 15px;
+    color: #777777;
+}
+
+.info-horizonatal-line {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.hotel-caption {
+    position: relative;
+    z-index: 82;
+    top: -102px;
+    background-color: #333;
+    width: 26%;
+    opacity: 0.6;
+}
+
+.hotel-heading {
+    color: rgb(255, 255, 255);
+    padding: 21px 9px 9px;
+    text-align: center;
+}
+
+.hotel-caption-wrapper {
+    padding: 1px;
+}
+
+.rating {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.hotel-info-container{
+    background-color: #EDEDEE;
+}
+
+.hotel-info-wrapper {
+    padding: 11px;
+    margin-top: -104px;
+}
+
+.hotel-inf-heading {
+    background-color: #991F23;
+    width: 16%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 29px;
+}
+
+.hotel-info-des {
+    padding: 14px;
+    text-align: justify;
+}
+
+.hotel-inf-horizontal-line {
+    margin: 0 auto;
+    width: 98%;
+}
+
+.contact_details {
+    background-color: #FFF;
+    margin-top: 8px;
+}
+
+.contact-heading {
+    background-color: #991F23;
+    text-align: center;
+    width: 16%;
+    color: #FFF;
+    font-size: 29px;
+}
+
+.contact-custom-row {
+    margin-left: 15px;
+    padding: 17px;
+    padding-left: 37px;
+}

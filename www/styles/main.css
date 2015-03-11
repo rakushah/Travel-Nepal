@@ -1,0 +1,61 @@
+.slider {
+  height: 30%;
+}
+
+.slider-slide {
+  padding-top: 20px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px; 
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+#list ol {
+  margin-top: 30px;
+}
+
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+img{
+  width: 100%
+}
+.white-star {
+      height: 18px;
+      width: 18px;
+      background-size: contain;
+      background-image: url("{!$Resource.Whitestar}");
+    }
+.orange-star { 
+      height: 18px;
+      width: 18px;
+      background-size: contain;
+      background-image: url("{!$Resource.OrangeStar}");
+    }
+.custom-icon {
+  font-size: 64px;
+  color : blue;
+}
+.bar.bar-assertive {
+  border-color: #cc2311;
+  background-color: #991F23;
+  
+  color: #fff;
+}
+element.style {
+  display: block;
+  height: 1000px;
+}

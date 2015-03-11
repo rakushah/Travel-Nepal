@@ -1,0 +1,20 @@
+<ion-view title="Book A Guide">
+  <ion-content lazy-scroll class="has-header" >
+   <!-- list items -->
+    <p>List of  all Available Guides</p>
+    <a href="#/app/guidelogin">Are you a guide????</a>
+     <ion-list >
+     		<ion-item  ng-repeat="item in GuideList"  class="item-thumbnail-left">
+       
+     			  <img class="lazy" image-lazy-src="{{item.guide_profile_image}}">
+            
+             <ion-buttons align="top"><button class="button" ng-click="itemClick(item,$index)" style="float: right;" >Book</button>
+          </ion-buttons>
+     			<h2>{{item.guide_name}}</h2>
+     			<p>{{item.guide_info}}</p>
+     		 <p>{{item.status}}</p>
+     		</ion-item>
+     </ion-list>
+  </ion-content>
+
+</ion-view>

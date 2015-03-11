@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="css/carbooking.css">
+<link rel="stylesheet" href="css/carbooking-responsivess.css">
+<ion-view title={{carPageDetails.car_model}} >
+  
+  <ion-content >
+    
+   <div class="car_image">
+        <img class="lazy" src="images/car.png"   height="100"> 
+    </div>
+    <div class="selection">
+      <select class="car-from" ng-model="selectedPlace.from"
+            ng-options="s.from for s in locations">
+        <option value="">From</option>
+    </select>
+    <select class="car-from" ng-model="selectedPlace.to"
+            ng-options="s.to for s in locations | filter:selectedPlace.from">
+        <option value="">TO</option>
+    </select>
+    </div>
+     
+    <div class="btn-group-way custom-btn-group" >  
+        <label class="btn btn-primary custom-btn" ng-model="selected.type" btn-radio="'one_way'">One Way</label>
+        <label class="btn btn-primary custom-btn" ng-model="selected.type" btn-radio="'two_way'">Two Way</label>
+    </div>
+    <div class="booking-container">
+    <div ng-controller="DatepickerDemoCtrl" class="departure-time">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="departtime">
+              <h4 class="departtime-heading">Depart On</h4>
+                  <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="selected.arrival_date" is-open="closed" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                    <span class="input-group-btn">
+                      <button type="button" class="button button-icon ion-chevron-down" ng-click="open($event)"></button>
+                    </span>
+                  </p>
+            </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="arrivaltime">
+             <h4 class="departtime-heading">Arrive On</h4>
+                <p class="input-group">
+                  <input type="text" class="form-control icon ion-calendar" datepicker-popup="{{format}}" ng-model="selected.depart_date" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="button button-icon ion-chevron-down" ng-click="open2($event)"></button>
+                  </span>
+                </p>     
+        </div>
+      </div>
+    </div> 
+
+
+
+
+<div class="row">
+          <div class="col-md-6">
+            <div class="second-block">
+              <h4 class="departtime-heading">Departure Time</h4>
+                <div class="departureTime" ng-controller="TimepickerDemoCtrl">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <select class="custom-select" ng-model="selected.time"
+                            ng-options="s for s in time">
+                        <option value="">Time</option>
+                      </select>
+                    </div>
+
+                    <!-- <div class="col-md-6">
+                      <select class="custom-select" ng-model="selected.TimeParam"
+                            ng-options="s for s in timeParam">
+                        <option value="">-- Time Param--</option>
+                      </select>
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+
+        <div class="col-md-6">
+            <div class="second-block-1">
+              <div class="number-of-travellers" mg-model="selected.count">
+                 <h4 class="departtime-heading">Travellers</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <pre class="custom-counter">{{selected.count}}</pre>
+                      </div>
+
+                      <div class="col-md-6">
+                          <button class="count-plus-minus" ng-click="selected.count = selected.count + 1" ng-init="selected.count=0">+</button>
+                          <button class="count-plus-minus" ng-click="selected.count = selected.count - 1" ng-init="selected.count=0">-</button>
+                      </div>
+                    </div>
+              </div>
+            </div> 
+        </div>
+</div>
+
+ 
+
+ <div class="calculate-price-container">
+   <div class="calculate-price-wrapper">
+     <span class="header-caption">Your estimated travel distance is {{calculatedData.distance}}</br></span>
+     
+    <div>
+      <button class="custom-calculate-btn btn" ng-click="calculatePrice(selected)"><i class="ion-calculator"></i> Calculate Price</button>
+       <button class="custom-calculate-btn btn" ng-click="newDestination(selected)">New Destination</button>
+    </div>
+    <span class="footer-caption">The total budget of your travel is NRS {{calculatedData.total_cost}}</span>
+   </div>
+ </div>
+
+    
+  
+
+    
+    </div>
+<div class="footer-btn-container">
+
+     <button class="send-enquiry-btn btn" href="#/app/bookCar" ng-click="sendenquiry(selected)"><span class="ion-checkmark-round"></span> Send Enquiry</button>
+     <button class="cancel-btn btn"><i class="ion-android-close"></i> Cancel</button>
+    </div> 
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,10 @@
+<ion-view title='Select Location From List' ng-controller="LoadPage">
+ 
+  <ion-content class="has-header" >
+	   <div class="list" ng-repeat="data in location" >
+           <button class="button button-full" ng-click="reloadSecondpage({{data}})">
+               {{data.location}}
+            </button>
+      </div>
+  </ion-content>
+</ion-view>

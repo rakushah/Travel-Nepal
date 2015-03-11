@@ -1,0 +1,51 @@
+<ion-view title={{detailsData.name}} ng-controller="getCatagoryDetails">
+ 
+  <ion-content class="has-header" >
+	<div class="img-responsive"  >
+		<img class="lazy" src="{{detailsData.image}}"   height="100">
+	</div>
+
+  <div class="hotel-info-container">
+    <div class="hotel-caption">
+    <div class="hotel-caption-wrapper">
+      <h2 class="hotel-heading">{{detailsData.name}}</h2>
+      <div ng-controller="RatingDemoCtrl">
+    <rating ng-model="rate" max="max" ></rating>
+   </div>
+    </div>
+  </div>
+
+  <div class="hotel-info-wrapper">
+      <div class="item_info">
+        <h2 class="hotel-inf-heading">Infromation</h2>
+          <p class="hotel-info-des">{{detailsData.info}}</p>
+              <hr class="hotel-inf-horizontal-line">
+                <div class="trek_facility">
+                   <p>Opening Hour : {{detailsData.opening_hour}}</p>
+                   <p>Pricing Range:${{detailsData.price_range}}</p>
+                   <p>Parking: {{detailsData.parking}}</p>
+                </div>
+      </div>
+      <div class="hotel-contact-info-wrapper">
+          <div class="contact_details">
+              <h2 class="contact-heading">Contact</h2>
+                <div class="contact-custom-row row">
+                  <div class="col-md-6">
+                    <p>{{detailsData.location}}</p>
+                    <p>Email: {{detailsData.email}}</p>
+                    <p>Website: {{detailsData.website}}</p>
+                    <p>Tel: {{detailsData.contact}}</p>
+                  </div>
+
+                  <div class="col-md-6">
+                    <a class="google-map" href="#/app/googleMap/{{detailsData.location}}"><i class="ion-ios-location"></i>  View on Google Map</a>
+                  </div>
+
+                </div>
+          </div>
+      </div>
+
+    </div>
+  </div>  
+  </ion-content>
+</ion-view>
