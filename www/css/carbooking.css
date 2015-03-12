@@ -1,58 +1,9 @@
-/*car reserved*/
-.car_image {
-	position: relative;
-}
+.selection-and-way-btn-container {
+  text-align: center;
+  margin-top: -115px;
+ }
 
-.selection {
-    position: absolute;
-    z-index: 19;
-    margin-top: -167px;
-    padding-left: 376px;
-}
-
-select.car-from {
-	margin-right: 168px;
-	/* opacity: 0.3; */
-	background: transparent;
-	width: 268px;
-	padding: 5px;
-	font-size: 16px;
-	line-height: 1;
-	border: 0;
-	border-radius: 0;
-	height: 34px;
-	-webkit-appearance: none;
-	width: 240px;
-	height: 34px;
-	overflow: hidden;
-	background: url('../images/new-arrow.png') no-repeat right;
-	/* border: 1px solid #ccc; */
-	color: #FFFFFF;
-}
-
-.btn-group-way.custom-btn-group {
-	position: absolute;
-	margin-top: -51px;
-	margin-left: 601px;
-}
-
-.btn-primary {
-	color: #AE8585;
-	text-shadow: none;
-	background-color: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-image: none;
-	background-repeat: no-repeat;
-	border-color: none;
-	border-color: none;
-	filter: none;
-	filter: none;
-}
-
-label.btn.btn-primary.custom-btn {
+ label.btn.btn-primary.custom-btn {
 	background: #B27A11;
 	border-radius: 0px;
 	border: 1px;
@@ -68,136 +19,159 @@ label.btn.btn-primary.custom-btn:hover{
 	border: 1px solid #B27A11;
 }
 
-/*.departtime {
-	width: 30%;
-	background-color: #FFF;
-	margin-left: 15px;
-	margin-top: 15px;
-}*/
-
-h4.departtime-heading {
-	padding-top: 7px;
-	padding-left: 15px;
-	font-size: 12px;
-	color: #BEBDBD;
-	font-weight: normal;
+.booking-container {
+  padding: 10px;
+  margin-top: 83px;
+  background-color: #EDEDEE;
 }
 
 .booking-container {
-	width: 100%;
-	background-color: #EDEDEE;
-	margin-top: -73px;
+  padding: 0px;
+  margin-top: 43px;
+  background-color: #EDEDEE;
 }
 
-.departure-time {
-	padding: 56px;
+.col-md-6.part {
+  width: 100%;
 }
 
-.row {
-    margin-left: -1px;
-    margin-top: 21px;
+.custom-row.row {
+  margin-left: 0px;
 }
 
 .departtime {
-	background-color: #FFF;
-	width: 619px;
-	border-right: 1px solid #EDEDEE;;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 6px;
+  border-right: 1px solid#EDEDEE;
 }
 
 .arrivaltime {
-	background-color: #FFF;
-	width: 619px;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 6px;
 }
 
-.second-block{
-	background-color: #FFF;
-	width: 619px;
-	margin-top: -10px;
-	border-right: 1px solid #EDEDEE;
-	border-top: 1px solid #EDEDEE;
-}
-.second-block-1{
-	background-color: #FFF;
-	width: 619px;
-	margin-top: -10px;
-	border-top: 1px solid #EDEDEE;
-}
-input[type="text"] {
-	width: 87%;
-	height: 40px;
-	margin-top: -6px;
-	margin-left: 15px;
-	border: 1px solid#FFF;
-	border-radius: 0px;
-	background: #fff;
-	border-top: 0px solid#FFF;
+.second-block {
+  background-color: #FFF;
+  padding: 6px;
+  border-right: 1px solid#EDEDEE;
+  margin-top: -9px;
 }
 
-.custom-counter {
-    width: 376px;
-    margin-left: 12px;
-    margin-top: -19px;
-    border-radius: 0px;
-    background-color: #FFF;
+.second-block-1 {
+  background-color: #FFFFFF;
+  padding: 6px;
+  margin-top: -9px;
 }
 
-.count-plus-minus {
-    width: 78px;
-    height: 41px;
-    margin-top: -19px;
-    border: 1px;
-    margin-left: 3px;
-    background-color: #E1E2E4;
-}
-
-.custom-select {
-    margin-top: -19px;
-    height: 41px;
-    margin-left: 13px;
-    border-radius: 0px;
-    width: 261px;
+.col-md-12.part {
+  width: 100%;
 }
 
 .calculate-price-container {
-    background-color: #FFFFFF;
-    width: 99%;
-    margin: 0 auto;
-    margin: 0 0 0 3px;
-    padding: 9px;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border-top: 1px solid#EDEDEE;
+  margin-top: 10px;
 }
 
-.custom-calculate-btn {
-    width: 42%;
-    height: 46px;
-    background-color: #696C77;
-    border: 1px !important;
-	margin: 9px;
+h4.departtime-heading {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
+  color: #C9C8C8;
+  font-weight: normal;
 }
 
-.btn {
-    display: inline-block;
-    padding: 4px 12px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    text-align: center;
-    text-shadow: none;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: none;
-    background-image: none;
-    background-repeat: repeat-x;
-    border-width: 1px;
-    border-style: solid;
-    -moz-border-top-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    border-image: none;
-    border-color: none;
-    border-radius: 0px;
-    box-shadow: none;
+select.custom-select.ng-pristine.ng-valid {
+  margin: 8px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+select {
+  margin: 8px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+pre.custom-counter.ng-binding {
+  margin: 9px;
+  width: 100%;
+  height: 28px;
+  padding: 4px;
+  border-radius: 0px;
+}
+
+button.count-plus {
+  margin-top: 8px;
+  margin-left: 14px;
+  width: 32px;
+  height: 29px;
+  border: 1px;
+}
+
+button.count-minus {
+	margin-top: 8px;
+	width: 32px;
+	height: 29px;
+	border: 1px;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 90%;
+  border-radius: 0px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button.button.button-icon.ion-chevron-down {
+  padding-top: 13px;
+}
+
+
+.btn { 
+  text-shadow: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-repeat: no-repeat;
+  border: none;
+  border-color: none;
+  border-color: none;
+  border-bottom-color: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 0px;
+}
+
+button.custom-calculate-btn.btn {
+  background-color: #696C77;
+  border-radius: 0px;
+  color: #FFFFFF;
+  padding: 9px;
+  margin-left: 12px;
+  width: 21%;
+  font-size: 19px;
+}
+
+span.header-caption.ng-binding {
+  padding: 11px;
+  color: #BEBEBE;
+}
+
+span.footer-caption.ng-binding {
+  padding: 9px;
+  padding-top: 16px;
+  color: #BEBEBE;
 }
 
 .send-enquiry-btn {
@@ -227,15 +201,21 @@ input[type="text"] {
 	color:#FFFFFF;
 }
 
-.header-caption {
-    margin: 9px;
-    color: #ADADAD;
-    font-size: 16px;
+select.car-from.ng-pristine.ng-valid {
+  margin-right: 168px;
+  background: transparent;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  width: 240px;
+  height: 34px;
+  overflow: hidden;
+  background: url('../images/new-arrow.png') no-repeat right;
+  color: #FFFFFF;
 }
 
-.footer-caption {
-    margin: 9px;
-    color: #ADADAD;
-    font-size: 16px;
-    padding-top: 8px;
-}

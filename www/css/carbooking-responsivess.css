@@ -1,117 +1,60 @@
-@media screen and (max-width: 568px) and (min-width: 320px){
-  
-}
-
-@media screen and (min-width: 320px) and (max-width: 568px) {
-  /*car booking*/
-  .row {
-    margin-left: -43px;
-  }
-
-  .departure-time {
-    padding: 42px;
-  }
-
-  .departtime {
-    width: 152px;
-    margin-left: 3px; 
-  }
-
-  .arrivaltime {
-    width: 152px;
-    margin-left: 60px;
+@media only screen and (min-width: 600px) and (max-width: 800px){
+  button.custom-calculate-btn.btn {
+    font-size: 13px;
   }
 
   input[type="text"] {
-    width: 95px;
-    height: 26px;
+    width: 81%;
   }
 
-  .button-icon {
-    margin-top: -15px;
-  }
-
-  .second-block {
-    background-color: #FFF;
-    width: 152px;
-    margin-left: 3px;
-  }
-  .second-block-1 {
-    width: 152px;
-    margin-left: 60px;
-  }
-
-  .custom-counter {
-    width: 38px;
-    margin-left: 56px;
-    height: 30px;
-    padding: 2.5px;
-  }
-
-  .count-plus-minus {
-    width: 18px;
-    height: 30px;
-    margin-top: -31px;
-  }
-
-  .custom-select {
-    height: 29px;
-    width: 102px;
-    margin-left: 53px;
-  }
-
-  .calculate-price-container {
-    background-color: #FFFFFF;
-    width: 304px;
-    margin-left: -34px;
-  }
-
-  .header-caption {
-    font-size: 13px;
-  }
-
-  .footer-caption {
-    font-size: 13px;
-  }
-
-  .custom-calculate-btn {
-    width: 42%;
-    height: 39px;
-    margin: 5px 0px 10px 10px;
-    font-size: 12px !important;
-  }
-
-  .send-enquiry-btn {
-    margin-top: -80px;
-  }
-  
-  .cancel-btn{
-    margin-top:-80px;
+  select.car-from.ng-pristine.ng-valid {
+    margin-right: 68px;
+    margin-left: 68px;
+    width: 147px;
   }
 
   .booking-container {
-    height: 360px;
+    margin-top: 33px;
   }
-
-  .selection {
-    margin-top: -98px;
-    padding-left: 0px;
-  }
-
-  .btn-group-way.custom-btn-group {
-    margin-top: -40px;
-    margin-left: 83px;
-  }
-
-select.car-from {
-  margin-right: 39px;
-  margin-left: 36px;
-  padding: 8px;
-  width: 83px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  input[type="text"] {
+    width: 68%;
+  }
+
+  button.custom-calculate-btn.btn {
+    width: 44%;
+    font-size: 14px;
+  }
+
+  .selection-and-way-btn-container {
+    margin-top: -123px;
+  }
+
+  select.car-from.ng-pristine.ng-valid {
+    margin-right: 19px;
+    width: 88px;
+  }
+
+  .car-selection {
+    padding-top: 35px;
+  }
+
+  .booking-container {
+    margin-top: 7px;
+  }
 
   img {
-    height: 206px;
+      height: 150px;
+  }
+
+  select.car-from.ng-pristine.ng-valid {
+    margin-right: 37px;
+      margin-left: 25px;
   }
 }
+
+
+
 
