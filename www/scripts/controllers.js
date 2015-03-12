@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngCordova'])
+angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngCordova','ngMap'])
 
 .controller('AppCtrl', function($scope, $ionicModal,$base64,$timeout,$http,$state,guideDetails) {
   // Form data for the login modal
@@ -252,17 +252,11 @@ angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitiz
  }
 ])
 .controller('newsDetailsCtrl',['$scope','makeHttpRequest','$stateParams','$cordovaSocialSharing',function($scope,makeHttpRequest,$stateParams,$cordovaSocialSharing){
-    $scope.shareAnywhere = function() {
-        $cordovaSocialSharing.share("This is your message", "This is your subject", "www/imagefile.png", "http://blog.nraboy.com");
-    }
+    $scope.shareNews = function() {
+       window.plugins.socialsharing.share($scope.completeNewsDetails.title);
+    };
  
-    $scope.shareViaTwitter = function(message, image, link) {
-        $cordovaSocialSharing.canShareVia("twitter", message, image, link).then(function(result) {
-            $cordovaSocialSharing.shareViaTwitter(message, image, link);
-        }, function(error) {
-            alert("Cannot share on Twitter");
-        });
-    }
+    
     function getnewsDetails(){
       makeHttpRequest.getnewsDetails($stateParams.newsID).success(function(response){
           console.log(response);

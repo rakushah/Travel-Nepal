@@ -250,6 +250,42 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/network.js",
+        "id": "org.apache.cordova.network-information.network",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+        "id": "org.apache.cordova.network-information.Connection",
+        "clobbers": [
+            "Connection"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "clobbers": [
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/hu.dpal.phonegap.plugins.SpinnerDialog/www/spinner.js",
+        "id": "hu.dpal.phonegap.plugins.SpinnerDialog.SpinnerDialog",
+        "merges": [
+            "window.plugins.spinnerDialog"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -257,9 +293,13 @@ module.exports.metadata =
 {
     "plugin.google.maps": "1.2.4",
     "org.apache.cordova.console": "0.2.13",
+    "org.apache.cordova.network-information": "0.2.15",
     "org.apache.cordova.splashscreen": "1.0.0",
+    "org.apache.cordova.inappbrowser": "0.6.0",
+    "nl.x-services.plugins.socialsharing": "4.3.15",
     "org.apache.cordova.device": "0.3.0",
     "org.apache.cordova.device-motion": "0.2.11",
+    "hu.dpal.phonegap.plugins.SpinnerDialog": "1.3.1",
     "org.apache.cordova.device-orientation": "0.3.11",
     "org.apache.cordova.geolocation": "0.3.12",
     "org.apache.cordova.media": "0.2.16",
