@@ -53,6 +53,11 @@
     margin-right: 37px;
       margin-left: 25px;
   }
+
+  select {
+    margin-right: 23px;
+    width: 108px;
+  }
 }
 
 
