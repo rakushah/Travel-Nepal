@@ -1,21 +1,22 @@
-  <ion-view hide-back-button="true" hide-nav-buttons="true" title="Local Transport">
+  <link rel="stylesheet" href="css/ionicons.css">
+<ion-view hide-back-button="true" hide-nav-buttons="true" title="Local Transport">
  <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content lazy-scroll class="has-header" >
    <!-- list items -->
 <p class="list-of-cars">List of Available Cars</p>
-   <ion-list >
-   		<ion-item  ng-repeat="item in carDetails"  class="item-thumbnail-left" >
+   <ion-list-item>
+      <ion-item  ng-repeat="item in carDetails"  class="item-thumbnail-left" >
      
-   			  <img class="lazy" image-lazy-src="{{item.car_image}}">
-           <ion-buttons align="top"><button class="button custom-button ion-checkmark-round"
+          <img class="lazy" image-lazy-src="{{item.car_image}}">
+           <ion-buttons align="top"><button class="button custom-button ion-android-done"
            ng-click="itemClick(item,$index)" style="float: right;" >Book</button>
         </ion-buttons>
-   			<h2 class="car-item-heading">{{item.car_model}}</h2>
-   			<p class="car-item-details">{{item.car_info}}</p>
-   		
-   		</ion-item>
+        <h2 class="car-item-heading">{{item.car_model}}</h2>
+        <p class="car-item-details">{{item.car_info}}</p>
+      
+      </ion-item>
    </ion-list>
   </ion-content>
 
