@@ -356,13 +356,23 @@ ion-item.item-thumbnail-left.item {
 	display: block;
 	margin: 0px;
 	padding: 0;
-	border-width: 3px;
+	border-width: 0px;
 	border-style: solid;
 	font-size: 16px;
+	border-bottom: 4px solid#FFFFFF;
 }
 
 .item-thumbnail-left, .item-thumbnail-left .item-content {
 	min-height: 80px;
+}
+
+.item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 116px;
+  height: 90px;
+  width: 100%;
 }
 
 button.custom-button {
@@ -377,36 +387,36 @@ button.custom-button {
 
 button.custom-button:hover {
 	background-color: #756F7B;
-	color: #FFFFFF;
 }
 
-button.button.custom-button.ion-checkmark-round {
+button.button.custom-button.ion-android-done {
 	white-space: normal;
 	font-size: 23px;
 	line-height: 26px;
 	color: #8B8989;
 }
 
-/*.button {
-	border-left: 1px solid #D1D1D2;
-	border-bottom: 1px solid#EDEDEE;
-	border-top: 1px solid#EDEDEE;
-	background-color: #EDEDEE;
-	border-right: 1px solid#EDEDEE;
-	}*/
+button.button.custom-button.ion-android-done:hover {
+	color:#FFFFFF;
+}
 
 p.list-of-cars {
 	margin-left: 21px;
 	margin-top: 9px;
-	font-weight: bold;
+	font-weight: normal;
+	font-size: 18px;
 }
 
 h2.car-item-heading {
-	padding-left: 97px;
+	padding-left: 127px;
+  	padding-right: 127px;
+  	font-weight: normal;
+  	font-size: 16px;
 }
 
 p.car-item-details.ng-binding {
-	padding-left: 97px;
+	padding-left: 127px;
+	text-align: justify;
 }
 
 /*css of to see pages*/
@@ -515,4 +525,29 @@ p.car-item-details.ng-binding {
     margin-left: 15px;
     padding: 17px;
     padding-left: 37px;
+}
+
+/*discounts*/
+
+.discount-details {
+    padding: 18px;
+    font-size: 21px;
+    color: #686868;
+}
+
+
+/*carbook*/
+button.custom-car-reserve-btn {
+  margin: 0 0 0 15px;
+  width: 11%;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: #991F23;
+  border: 1px;
+  border-radius: 4px;
+}
+
+.discount-images-caption-container {
+  position: absolute;
+  margin-top: -133px;
 }

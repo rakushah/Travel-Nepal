@@ -293,4 +293,32 @@
   img {
   height: 130px;
   }
+
+/*car list*/
+  .item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+    max-width: 76px;
+  }
+
+  h2.car-item-heading {
+    padding-left: 84px;
+    padding-right: 0px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  button.custom-button {
+    width: 24%;
+    min-height: 76px;
+  }
+
+  p.car-item-details.ng-binding {
+    padding-left: 84px;
+    margin-top: -7px;
+    padding-right: 0px;
+    font-size: 12px;    
+  }
+
+  button.button.custom-button.ion-android-done {
+    font-size: 17px;
+  }
 }
