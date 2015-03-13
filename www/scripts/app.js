@@ -8,7 +8,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('MyIonicProject', ['ionic', 'config', 'MyIonicProject.controllers','ionicLazyLoad','ngCordova'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform,$ionicPopup) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -19,10 +19,22 @@ angular.module('MyIonicProject', ['ionic', 'config', 'MyIonicProject.controllers
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+      if(window.Connection) {
+                if(navigator.connection.type == Connection.NONE) {
+                    $ionicPopup.confirm({
+                        title: "Internet Disconnected",
+                        content: "The internet is disconnected on your device."
+                    })
+                    .then(function(result) {
+                        if(!result) {
+                            ionic.Platform.exitApp();
+                        }
+                    });
+                }
+            }
  
   });
 })
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -234,7 +246,7 @@ angular.module('MyIonicProject', ['ionic', 'config', 'MyIonicProject.controllers
       url: '/homePage',
     views:{
       'menuContent' :{
-          templateUrl: 'templates/common_detail_pagess.html',
+          templateUrl: 'templates/common_detail_page.html',
          controller: 'getCatagoryDetails'
         }
     }
