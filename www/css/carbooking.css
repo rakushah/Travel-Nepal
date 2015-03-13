@@ -4,19 +4,19 @@
  }
 
  label.btn.btn-primary.custom-btn {
-	background: #B27A11;
-	border-radius: 0px;
-	border: 1px;
-	color: #FFFFFF;
-	margin: -2px;
-	line-height: 2;
-	height: 36px;
-	/* border: 1px solid#B27A11; */
+  background: #B27A11;
+  border-radius: 0px;
+  border: 1px;
+  color: #FFFFFF;
+  margin: -2px;
+  line-height: 2;
+  height: 36px;
+  /* border: 1px solid#B27A11; */
 }
 
 label.btn.btn-primary.custom-btn:hover{
-	background-color: transparent;
-	border: 1px solid #B27A11;
+  background-color: transparent;
+  border: 1px solid #B27A11;
 }
 
 .booking-container {
@@ -87,14 +87,27 @@ h4.departtime-heading {
 
 select.custom-select.ng-pristine.ng-valid {
   margin: 8px;
-  width: 100%;
+  width: 113px;
   border-radius: 0px;
 }
 
 select {
+  margin-right: 168px;
+  background: transparent;
   margin: 8px;
-  width: 100%;
-  border-radius: 0px;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  width: 240px;
+  height: 30px;
+  overflow: hidden;
+  background: url('../images/new-arrow.png') no-repeat right;
+  color: 
 }
 
 pre.custom-counter.ng-binding {
@@ -114,10 +127,10 @@ button.count-plus {
 }
 
 button.count-minus {
-	margin-top: 8px;
-	width: 32px;
-	height: 29px;
-	border: 1px;
+  margin-top: 8px;
+  width: 32px;
+  height: 29px;
+  border: 1px;
 }
 
 input[type="text"] {
@@ -183,8 +196,8 @@ span.footer-caption.ng-binding {
 }
 
 .send-enquiry-btn:hover{
-	background-color:#7D1519;
-	color:#FFFFFF;
+  background-color:#7D1519;
+  color:#FFFFFF;
 }
 
 .cancel-btn {
@@ -197,8 +210,8 @@ span.footer-caption.ng-binding {
 }
 
 .cancel-btn:hover {
-	background-color:#7D1519;
-	color:#FFFFFF;
+  background-color:#7D1519;
+  color:#FFFFFF;
 }
 
 select.car-from.ng-pristine.ng-valid {
