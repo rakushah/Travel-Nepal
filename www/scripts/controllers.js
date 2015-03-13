@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngMap'])
+angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngCordova','ngMap'])
 
 .controller('AppCtrl', function($scope, $ionicModal,$base64,$timeout,$http,$state,guideDetails) {
   // Form data for the login modal
@@ -380,9 +380,11 @@ getnewsDetails();
   
   }
 ])
-.controller('flightDetailsCtrl',['$scope','$state','makeHttpRequest','$stateParams','nameInUrl','$filter','$http',function($scope,$state,makeHttpRequest,$stateParams,nameInUrl,$filter,$http){
+.controller('flightDetailsCtrl',['$scope','$state','makeHttpRequest','$stateParams','nameInUrl','$filter','$http','$ionicNavBarDelegate',function($scope,$state,makeHttpRequest,$stateParams,nameInUrl,$filter,$http,$ionicNavBarDelegate){
        $scope.selectedPlace = {};
-      
+       $scope.goBack = function() {
+            $ionicNavBarDelegate.back();
+  };
        getFlightDetails(nameInUrl.getname(),$stateParams.clickedflightDetails);
       function getFlightDetails(flightType,flightId){
          makeHttpRequest.getFlightDetails(flightType,flightId).success(function(response){
@@ -492,7 +494,7 @@ getnewsDetails();
     };
   }
 ])
-.controller('CarCtrlName',function($scope,$state,CardetailsData,makeHttpRequest,$http,$filter,CarBookingDetailsService){
+.controller('CarCtrlName',function($scope,$state,CardetailsData,makeHttpRequest,$http,$filter,CarBookingDetailsService,$ionicNavBarDelegate){
     //$scope.pageNme=;
     var item=CardetailsData.getname();
      $scope.selectedPlace = {};
@@ -561,6 +563,9 @@ getnewsDetails();
       };
       $scope.sendenquiry=function(selected){
           $scope.sendindenquiryParams={};
+          if ($scope.selectedPlace.from.from==null) {
+            alert("Complete the Form")
+          }
           $scope.sendindenquiryParams.id=item.id;
           $scope.sendindenquiryParams.car_model=item.car_model;
           $scope.sendindenquiryParams.from=$scope.selectedPlace.from.from;
@@ -574,8 +579,12 @@ getnewsDetails();
           $scope.sendindenquiryParams.travel_time=selected.time+selected.TimeParam;
           console.log($scope.sendindenquiryParams);
           CarBookingDetailsService.setname($scope.sendindenquiryParams);
-          $state.go('app.reserveCar');
+           $state.go('app.reserveCar');
+          
       };
+       $scope.goBack = function() {
+            $ionicNavBarDelegate.back();
+  };
 
   }
 )
