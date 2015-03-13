@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngCordova','ngMap'])
+angular.module('MyIonicProject.controllers', ['ui.bootstrap','base64','ngSanitize','ngMap'])
 
 .controller('AppCtrl', function($scope, $ionicModal,$base64,$timeout,$http,$state,guideDetails) {
   // Form data for the login modal
